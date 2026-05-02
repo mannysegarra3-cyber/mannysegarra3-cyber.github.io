@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | The Agile Knight</title>
+  <style>
+    @font-face {
+      font-family: 'BlackGoth';
+      src: url('fonts/black-goth/Black Goth - Reguler.otf') format('opentype');
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --gold:    #f0b429;
+      --gold-lt: #ffd166;
+      --black:   #000000;
+    }
+    html, body {
+      background: var(--black);
+      color: var(--gold);
+      font-family: 'BlackGoth', Georgia, serif;
+    }
+
+    /* TOP BAR */
+    .top-bar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 32px;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(8px);
+    }
+    .site-name { font-size: 1.3rem; color: var(--gold); letter-spacing: 0.08em; }
+    .top-nav { display: flex; align-items: center; gap: 6px; }
+    .top-nav a {
+      color: var(--gold); text-decoration: none; font-size: 1rem;
+      letter-spacing: 0.05em; transition: color 0.2s;
+    }
+    .top-nav a:hover { color: var(--gold-lt); }
+    .top-nav .divider { color: var(--gold); opacity: 0.4; }
+
+    /* HERO IMAGE */
+    .hero-image {
+      width: 100%;
+      padding-top: 56px;
+      line-height: 0;
+    }
+    .hero-image img {
+      width: 100%;
+      max-height: 95vh;
+      object-fit: contain;
+      object-position: center center;
+      display: block;
+      background: var(--black);
+    }
+
+    /* CONTENT */
+    .page-content {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 32px 80px;
+    }
+    .page-content h2 {
+      font-size: 2rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      margin-bottom: 28px;
+      border-bottom: 1px solid rgba(240,180,41,0.25);
+      padding-bottom: 16px;
+    }
+    .page-content p {
+      font-family: Georgia, serif;
+      font-size: 1rem;
+      line-height: 1.85;
+      color: rgba(240,180,41,0.85);
+      margin-bottom: 20px;
+    }
+    .placeholder-note {
+      font-family: Georgia, serif;
+      font-size: 0.8rem;
+      color: rgba(240,180,41,0.3);
+      font-style: italic;
+      margin-top: 40px;
+      border: 1px dashed rgba(240,180,41,0.2);
+      padding: 16px 20px;
+      border-radius: 6px;
+    }
+
+    /* HOME BUTTON */
+    .home-btn {
+      display: inline-block;
+      margin: 0 32px 48px;
+      font-family: 'BlackGoth', Georgia, serif;
+      font-size: 1rem;
+      color: var(--gold);
+      text-decoration: none;
+      border: 1px solid rgba(240,180,41,0.4);
+      border-radius: 999px;
+      padding: 10px 28px;
+      letter-spacing: 0.06em;
+      transition: background 0.2s, color 0.2s;
+    }
+    .home-btn:hover { background: var(--gold); color: var(--black); }
+
+    footer {
+      border-top: 1px solid rgba(240,180,41,0.12);
+      text-align: center;
+      padding: 16px 32px;
+      font-family: Georgia, serif;
+      font-size: 0.75rem;
+      color: rgba(240,180,41,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top-bar">
+    <span class="site-name">Manny Segarra 3 &nbsp;⚔&nbsp; The Agile Knight</span>
+    <nav class="top-nav">
+      <a href="#">Login</a>
+      <span class="divider">&nbsp;|&nbsp;</span>
+      <a href="#">Contact Me</a>
+    </nav>
+  </header>
+
+  <div class="hero-image">
+    <img src="BEING KNIGHTED.png" alt="Being Knighted" />
+  </div>
+
+  <a href="index.html" class="home-btn">← Home</a>
+
+  <div class="page-content">
+    <h2>About Me</h2>
+
+    <p>
+      I am Manny Segarra 3 — the Agile Knight. A Senior Scrum Master and Agile Coach with over 16 years
+      in the field, helping teams and organizations move from chaos to clarity.
+    </p>
+
+    <p>
+      My work is built on nine values tattooed on my body because they are the foundation of who I am:
+      Honor, Discipline, Respect, Compassion, Loyalty, Wisdom, Truth, Justice, and Courage.
+      These are not guidelines. They are how I lead every day.
+    </p>
+
+    <p>
+      I hold the Scrum Alliance AI Certification for Scrum Masters and formerly held SAFe SPC Level 5 —
+      deep experience in scaled Agile, organizational transformation, and change management at the enterprise level.
+    </p>
+
+    <p>
+      I am also a man of faith. My work and my values are not separate — they are the same thing.
+      I meditate daily. I know myself. That self-knowledge is what makes every coaching conversation real.
+    </p>
+
+    <div class="placeholder-note">
+      Additional content coming soon — more of Manny's story will be added here.
+    </div>
+  </div>
+
+  <footer>© 2026 Manny Segarra 3 — The Agile Knight</footer>
+
+</body>
+</html>
